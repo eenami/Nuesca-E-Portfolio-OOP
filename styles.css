@@ -446,6 +446,39 @@ footer {
 /* Midterm Section Styles */
 .mb-6 { margin-bottom: 2.5rem; }
 .mt-4 { margin-top: 1.5rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+
+/* Table Styles */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.activity-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.activity-table th, .activity-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.activity-table th {
+    background-color: rgba(139, 92, 246, 0.1);
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.activity-table td {
+    color: var(--text-secondary);
+}
+
+.activity-table tbody tr:hover {
+    background-color: rgba(139, 92, 246, 0.05);
+}
 
 .midterm-container {
     display: flex;

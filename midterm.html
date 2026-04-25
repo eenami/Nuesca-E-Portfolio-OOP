@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midterm - Geena Nuesca E-Portfolio</title>
     <meta name="description" content="Midterm Projects of Geena Nuesca">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        .section { padding-top: 8rem; }
+        .section {
+            padding-top: 8rem;
+        }
     </style>
 </head>
+
 <body>
     <div class="background-mesh"></div>
-    
+
     <nav>
         <div class="nav-container">
             <div class="logo">GN.</div>
@@ -29,20 +35,170 @@
     <main>
         <section id="midterm" class="section">
             <h2 class="section-title">Midterm Page</h2>
-            
+
             <div class="midterm-container">
                 <div class="glass-panel mb-6">
                     <div class="project-tag">Coding</div>
                     <h3 class="subsection-title">Midterm Activities</h3>
-                    <p class="intro-text">These are the hands-on activities completed during the midterm period.</p>
-                    
+                    <p class="intro-text">These are the activities created and completed during the midterm period.</p>
+
                     <div class="activity-card">
-                        <h4>Midterm Activity #1</h4>
+                        <h4>Midterm Activity #1 - Variables</h4>
                         <div class="activity-details">
-                            <!-- Content to be added -->
+                            <div class="instructions-block mb-4">
+                                <strong>Instructions:</strong>
+                                <ul style="margin-left: 1.5rem; margin-top: 0.5rem; color: var(--text-secondary);">
+                                    <li>Carefully analyze the given Java program.</li>
+                                    <li>Trace the references and memory changes step-by-step.</li>
+                                    <li>Complete all required tables and questions.</li>
+                                    <li>Show your logical reasoning where necessary.</li>
+                                </ul>
+                            </div>
+
+                            <div class="code-block mb-4">
+                                <pre><code>class Student {
+       String name;
+       int grade;
+       
+      Student(String n, int g) {
+               name = n;
+               grade = g;
+       }
+}
+
+public class TestStudent {
+         public static void main (String[] args) {
+                    Student s1 = new Student ("John", 85);
+                     Student s2 = new Student ("Maria", 90);
+                     Student s3 = s2;
+
+                     s1.grade = 95;
+                     s3.name = "Ana";
+ 
+                    System.out.println(s1.name + " " + s1.grade);
+                    System.out.println(s2.name + " " + s2.grade);
+                    System.out.println(s3.name + " " + s3.grade);
+          }
+}</code></pre>
+                            </div>
+
+                            <div class="table-section mb-4">
+                                <h5 class="mb-2" style="font-size: 1.1rem; color: var(--accent-color);">Part A -
+                                    Variable Identification Table</h5>
+                                <div class="table-responsive">
+                                    <table class="activity-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Variable Name</th>
+                                                <th>Data Type</th>
+                                                <th>Variable Type</th>
+                                                <th>Stored In</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>name</td>
+                                                <td>String</td>
+                                                <td>Instance</td>
+                                                <td>Heap</td>
+                                            </tr>
+                                            <tr>
+                                                <td>grade</td>
+                                                <td>int</td>
+                                                <td>Instance</td>
+                                                <td>Heap</td>
+                                            </tr>
+                                            <tr>
+                                                <td>s1</td>
+                                                <td>Student</td>
+                                                <td>Local</td>
+                                                <td>Stack</td>
+                                            </tr>
+                                            <tr>
+                                                <td>s2</td>
+                                                <td>Student</td>
+                                                <td>Local</td>
+                                                <td>Stack</td>
+                                            </tr>
+                                            <tr>
+                                                <td>s3</td>
+                                                <td>Student</td>
+                                                <td>Local</td>
+                                                <td>Stack</td>
+                                            </tr>
+                                            <tr>
+                                                <td>n</td>
+                                                <td>String</td>
+                                                <td>Local</td>
+                                                <td>Stack</td>
+                                            </tr>
+                                            <tr>
+                                                <td>g</td>
+                                                <td>int</td>
+                                                <td>Local</td>
+                                                <td>Stack</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="table-section mb-4">
+                                <h5 class="mb-2" style="font-size: 1.1rem; color: var(--accent-color);">Part B -
+                                    Explanation</h5>
+                                <div class="table-responsive">
+                                    <table class="activity-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Statement</th>
+                                                <th>What Happens?</th>
+                                                <th>Memory Impact</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><code>Student s1 = new Student("John", 85);</code></td>
+                                                <td>Creates a new student and stores it at s1, "John" 85</td>
+                                                <td>Created in Heap -> s1 Stack</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>Student s2 = new Student("Maria", 90);</code></td>
+                                                <td>Creates a new student and stores it at s2, "Maria" 90</td>
+                                                <td>Created in Heap -> s2 Stack</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>Student s3 = s2;</code></td>
+                                                <td>s3 is assigned the same as s2, Maria 90 -> s3</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>s1.grade = 95;</code></td>
+                                                <td>Updates the grade of s1, John 95</td>
+                                                <td>s1 grade becomes 95</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>s3.name = "Ana";</code></td>
+                                                <td>Updates the name of s3, Ana 90</td>
+                                                <td>s2 name becomes "Ana" which also becomes s3</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="output-section">
+                                <h5 class="mb-2" style="font-size: 1.1rem; color: var(--accent-color);">Part C - Output
+                                </h5>
+                                <div class="code-block" style="padding: 1rem;">
+                                    <pre><code>It will print:
+John 95
+Ana 90
+Ana 90</code></pre>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
+
                     <div class="activity-card">
                         <h4>Midterm Activity #2</h4>
                         <div class="activity-details">
@@ -81,4 +237,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
