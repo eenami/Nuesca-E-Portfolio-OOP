@@ -2,7 +2,7 @@
 const observerOptions = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.15
+    threshold: 0.02
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
@@ -19,6 +19,10 @@ const observer = new IntersectionObserver((entries, observer) => {
 document.querySelectorAll('.section-title, .glass-panel').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
+    
+    // Force reflow before applying transition to prevent it from animating to 0
+    void el.offsetWidth;
+    
     el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
     observer.observe(el);
 });
