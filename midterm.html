@@ -382,12 +382,148 @@ Ana 90</code></pre>
                     <details class="activity-card">
                         <summary>
                             <div class="summary-content">
-                                <h4>Midterm Activity #4</h4>
-                                <span class="dropdown-icon">▼</span>
+                                <h4>Midterm Activity #4 - Student Payment System with Validation Counter</h4>
+                                <div style="display: flex; align-items: center; gap: 1rem;">
+                                    <div class="project-tag" style="margin-bottom: 0; white-space: nowrap;">Grade: 30/30
+                                    </div>
+                                    <span class="dropdown-icon">▼</span>
+                                </div>
                             </div>
                         </summary>
                         <div class="activity-details">
-                            <!-- Content to be added -->
+                            <div class="instructions-block mb-4">
+                                <strong>Program Requirements:</strong>
+                                <ol style="margin-left: 1.5rem; margin-top: 0.5rem; color: var(--text-secondary);">
+                                    <li>Create a Java program named: <code>StudentPaymentSystemLastName</code> (Example: StudentPaymentSystemBedis)</li>
+                                    <li>Ask the user to input:
+                                        <ul style="margin-left: 1.5rem; margin-top: 0.25rem;">
+                                            <li>Student Name</li>
+                                            <li>Student ID</li>
+                                            <li>Total Tuition Fee</li>
+                                        </ul>
+                                    </li>
+                                    <li>Display the menu:</li>
+                                </ol>
+
+                                <strong style="display: block; margin-top: 1rem;">===== PAYMENT MENU =====</strong>
+                                <ul style="list-style-type: none; margin-left: 0; margin-top: 0.25rem; color: var(--text-secondary);">
+                                    <li>1. Pay Tuition</li>
+                                    <li>2. Check Balance</li>
+                                    <li>3. Apply Discount</li>
+                                    <li>4. Exit</li>
+                                </ul>
+
+                                <strong style="display: block; margin-top: 1.5rem;">Program Rules</strong>
+                                <h5 style="margin-top: 0.5rem; color: var(--text-primary); font-size: 1.05rem;">General Rules</h5>
+                                <ul style="margin-left: 1.5rem; margin-top: 0.25rem; color: var(--text-secondary);">
+                                    <li>Use <code>switch</code> statement to process menu options</li>
+                                    <li>Use <code>do-while</code> loop to repeat the program until Exit</li>
+                                    <li>Use nested <code>if</code> statements for validation</li>
+                                    <li>Use a counter variable to track number of transactions</li>
+                                </ul>
+
+                                <h5 style="margin-top: 1rem; color: var(--text-primary); font-size: 1.05rem;">Payment Rules</h5>
+                                <ol style="margin-left: 1.5rem; margin-top: 0.25rem; color: var(--text-secondary);">
+                                    <li><strong>Pay Tuition</strong>
+                                        <ul style="margin-left: 1.5rem; margin-top: 0.25rem;">
+                                            <li>Ask for payment amount</li>
+                                            <li>Validate:
+                                                <ul style="margin-left: 1.5rem;">
+                                                    <li>If payment &gt; remaining balance &rarr; display: <code>Invalid Payment</code></li>
+                                                    <li>Else &rarr; deduct from balance</li>
+                                                </ul>
+                                            </li>
+                                            <li>Increment transaction counter</li>
+                                        </ul>
+                                    </li>
+                                    <li style="margin-top: 0.5rem;"><strong>Check Balance</strong>
+                                        <ul style="margin-left: 1.5rem; margin-top: 0.25rem;">
+                                            <li>Display remaining balance</li>
+                                            <li>Increment transaction counter</li>
+                                        </ul>
+                                    </li>
+                                    <li style="margin-top: 0.5rem;"><strong>Apply Discount</strong>
+                                        <ul style="margin-left: 1.5rem; margin-top: 0.25rem;">
+                                            <li>Ask user if they are:
+                                                <ul style="margin-left: 1.5rem;">
+                                                    <li>Regular Student</li>
+                                                    <li>Scholar</li>
+                                                </ul>
+                                            </li>
+                                            <li>Conditions:
+                                                <ul style="margin-left: 1.5rem;">
+                                                    <li>If Scholar &rarr; 20% discount</li>
+                                                    <li>If Regular &rarr; no discount</li>
+                                                    <li>Discount applies only once</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li style="margin-top: 0.5rem;"><strong>Exit</strong>
+                                        <ul style="margin-left: 1.5rem; margin-top: 0.25rem;">
+                                            <li>Display:
+                                                <ul style="margin-left: 1.5rem;">
+                                                    <li>Student Name</li>
+                                                    <li>Total Transactions</li>
+                                                    <li>Final Balance</li>
+                                                </ul>
+                                            </li>
+                                            <li>End program</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+
+                                <h5 style="margin-top: 1rem; color: var(--text-primary); font-size: 1.05rem;">Additional Conditions</h5>
+                                <ul style="margin-left: 1.5rem; margin-top: 0.25rem; color: var(--text-secondary);">
+                                    <li>Prevent negative balance</li>
+                                    <li>Prevent multiple discount applications</li>
+                                    <li>Show message: <code>No remaining balance</code> if fully paid</li>
+                                </ul>
+                            </div>
+
+                            <div class="qa-item">
+                                <div class="question" style="margin-bottom: 1rem;"><strong>Program:</strong></div>
+                                <div style="display: flex; gap: 1rem;">
+                                    <div class="media-container" style="flex: 1; margin: 0;">
+                                        <img src="M4-1.png" alt="Program Part 1" class="content-img">
+                                    </div>
+                                    <div class="media-container" style="flex: 1; margin: 0;">
+                                        <img src="M4-2.png" alt="Program Part 2" class="content-img">
+                                    </div>
+                                    <div class="media-container" style="flex: 1; margin: 0;">
+                                        <img src="M4-3.png" alt="Program Part 3" class="content-img">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="qa-item">
+                                <div class="question" style="margin-bottom: 1rem;"><strong>Program Output:</strong></div>
+                                
+                                <h5 class="mb-2" style="font-size: 1.1rem; color: var(--accent-color); margin-top: 1.5rem;">Output (1)</h5>
+                                <div class="media-container" style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
+                                    <img src="M4-1.1.png" alt="Program Output 1" class="content-img">
+                                </div>
+
+                                <h5 class="mb-2" style="font-size: 1.1rem; color: var(--accent-color);">Output (2)</h5>
+                                <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem;">
+                                    <div class="media-container" style="margin: 0;">
+                                        <img src="M4-2.1.png" alt="Program Output 2.1" class="content-img">
+                                    </div>
+                                    <div class="media-container" style="margin: 0;">
+                                        <img src="M4-2.2.png" alt="Program Output 2.2" class="content-img">
+                                    </div>
+                                </div>
+
+                                <h5 class="mb-2" style="font-size: 1.1rem; color: var(--accent-color);">Output (3)</h5>
+                                <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 0.5rem;">
+                                    <div class="media-container" style="margin: 0;">
+                                        <img src="M4-3.1.png" alt="Program Output 3.1" class="content-img">
+                                    </div>
+                                    <div class="media-container" style="margin: 0;">
+                                        <img src="M4-3.2.png" alt="Program Output 3.2" class="content-img">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </details>
 
@@ -395,7 +531,11 @@ Ana 90</code></pre>
                         <summary>
                             <div class="summary-content">
                                 <h4>Midterm Activity #5</h4>
-                                <span class="dropdown-icon">▼</span>
+                                <div style="display: flex; align-items: center; gap: 1rem;">
+                                    <div class="project-tag" style="margin-bottom: 0; white-space: nowrap;">Grade: 30/30
+                                    </div>
+                                    <span class="dropdown-icon">▼</span>
+                                </div>
                             </div>
                         </summary>
                         <div class="activity-details">
