@@ -621,3 +621,35 @@ footer {
     color: var(--text-secondary);
     line-height: 1.7;
 }
+
+/* Dropdown Styles */
+details.activity-card summary {
+    cursor: pointer;
+    list-style: none;
+    outline: none;
+}
+
+details.activity-card summary::-webkit-details-marker {
+    display: none;
+}
+
+details.activity-card summary .summary-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+details.activity-card summary h4 {
+    margin-bottom: 0;
+}
+
+.dropdown-icon {
+    transition: transform 0.3s ease;
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+details.activity-card[open] .dropdown-icon {
+    transform: rotate(180deg);
+}
