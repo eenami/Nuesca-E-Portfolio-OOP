@@ -1,5 +1,5 @@
 :root {
-    --bg-dark: #f8fafc;
+    --bg-dark: #ffffff;
     --text-primary: #0f172a;
     --text-secondary: #475569;
     --accent-color: #8b5cf6;
@@ -55,7 +55,7 @@ nav {
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--glass-border);
     z-index: 100;
-    background: rgba(248, 250, 252, 0.8);
+    background: rgba(255, 255, 255, 0.8);
 }
 
 .nav-container {
