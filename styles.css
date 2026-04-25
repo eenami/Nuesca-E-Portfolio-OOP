@@ -209,14 +209,16 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 500px;
     perspective: 1000px;
 }
 
 .blob-shape {
     position: absolute;
-    width: 320px;
-    height: 320px;
+    width: 450px;
+    height: 450px;
+    max-width: 90vw;
+    max-height: 90vw;
     background: linear-gradient(135deg, rgba(139, 92, 246, 0.4), rgba(139, 92, 246, 0.1));
     animation: wiggle 8s ease-in-out infinite alternate;
     z-index: 1;
@@ -237,7 +239,8 @@ main {
 .hero-image {
     position: relative;
     z-index: 2;
-    width: 300px;
+    width: 420px;
+    max-width: 85vw;
     height: auto;
     object-fit: cover;
     filter: drop-shadow(0 10px 30px rgba(139, 92, 246, 0.3));
