@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geena Nuesca - E-Portfolio</title>
+    <meta name="description" content="Personal E-Portfolio of Geena Nuesca">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-mesh"></div>
+    
+    <nav>
+        <div class="nav-container">
+            <div class="logo">GN.</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#midterm">Midterm</a></li>
+                <li><a href="#final">Final</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="main-title">Hello, I'm <br><span class="gradient-text">Geena Nuesca</span></h1>
+                <p class="subtitle">This e-portfolio presents my Midterm Project in Object-Oriented Programming using Wix. It includes quizzes, activities, and exams that demonstrate my understanding of OOP concepts.</p>
+                <div class="cta-buttons">
+                    <a href="#midterm" class="btn primary">View Midterm Work</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-graphic" id="parallax-container">
+                <div class="glass-card main-card">
+                    <div class="card-content">
+                        <h3>OOP Midterm</h3>
+                        <p>Object-Oriented Programming Portfolio showcasing my skills and projects.</p>
+                        <div class="code-snippet">
+                            <code>class Student {<br>&nbsp;&nbsp;String name = "Geena";<br>&nbsp;&nbsp;void learnOOP() {<br>&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Success!");<br>&nbsp;&nbsp;}<br>}</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-element el-1"></div>
+                <div class="floating-element el-2"></div>
+            </div>
+        </section>
+
+        <section id="midterm" class="section">
+            <h2 class="section-title">Midterm Page</h2>
+            
+            <div class="midterm-container">
+                <!-- Midterm Quizzes -->
+                <div class="glass-panel mb-6">
+                    <div class="project-tag">Theory</div>
+                    <h3 class="subsection-title">Midterm Quizzes</h3>
+                    <div class="qa-item">
+                        <p class="question"><strong>Q: What is Encapsulation in OOP?</strong></p>
+                        <p class="answer"><strong>A:</strong> Encapsulation is the bundling of data (variables) and methods that operate on that data into a single unit or class.</p>
+                        <p class="explanation"><em>Explanation:</em> It restricts direct access to some of an object's components, which is a means of preventing accidental interference. In Java, this is achieved using private access modifiers and getter/setter methods.</p>
+                    </div>
+                    <div class="qa-item">
+                        <p class="question"><strong>Q: Explain Polymorphism.</strong></p>
+                        <p class="answer"><strong>A:</strong> Polymorphism allows objects to be treated as instances of their parent class rather than their actual class.</p>
+                        <p class="explanation"><em>Explanation:</em> The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object. Method overriding is a classic example.</p>
+                    </div>
+                </div>
+
+                <!-- Midterm Seatwork -->
+                <div class="glass-panel mb-6">
+                    <div class="project-tag">Practice</div>
+                    <h3 class="subsection-title">Midterm Seatwork</h3>
+                    <div class="qa-item">
+                        <p class="question"><strong>Task:</strong> Create a class Diagram for a Student Grading System.</p>
+
+                        <p class="explanation"><em>Explanation:</em> The diagram visualizes the relationship between the Student, Course, and Grade classes, demonstrating associations and attributes effectively.</p>
+                    </div>
+                </div>
+
+                <!-- Midterm Activities -->
+                <div class="glass-panel mb-6">
+                    <div class="project-tag">Coding</div>
+                    <h3 class="subsection-title">Midterm Activities</h3>
+                    <p class="intro-text">During the midterm, we explored core Java concepts through hands-on activities, focusing on decision structures, methods, and building practical console applications like an ATM simulator.</p>
+                    
+                    <div class="activity-card">
+                        <h4>1. ATM Simulator Program</h4>
+                        <div class="activity-details">
+                            <p><strong>Explanation:</strong> This Java program uses `Scanner` for input, `while` loops for the menu, and `switch` statements to navigate between Withdraw, Deposit, and Check Balance options.</p>
+                            <p><strong>Learnings:</strong> I learned how to manage state (balance) within a class, validate user input to prevent exceptions, and modularize code using separate methods for each transaction.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-card">
+                        <h4>2. Decision Structures & Methods</h4>
+                        <div class="code-block">
+                            <pre><code>public static void checkGrade(int score) {
+    if (score >= 90) {
+        System.out.println("Grade: A");
+    } else if (score >= 80) {
+        System.out.println("Grade: B");
+    } else {
+        System.out.println("Grade: C or below");
+    }
+}</code></pre>
+                        </div>
+                        <div class="activity-details">
+                            <p><strong>Explanation:</strong> A simple method demonstrating the use of `if-else` decision structures to evaluate student scores.</p>
+                            <p><strong>Learnings:</strong> Improved my understanding of control flow and how passing arguments to methods enables code reusability.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Midterm Exam -->
+                <div class="glass-panel">
+                    <div class="project-tag">Assessment</div>
+                    <h3 class="subsection-title">Midterm Exam</h3>
+                    <div class="exam-content">
+                        <p>The midterm exam tested our comprehensive understanding of classes, objects, methods, and logic building.</p>
+                        <div class="action-buttons mt-4 mb-4">
+                            <!-- Multimedia / Document Download example -->
+                            <a href="#" class="btn secondary download-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                Download Midterm_Exam.pdf
+                            </a>
+                        </div>
+                        <div class="reflection-box">
+                            <h4>Reflection</h4>
+                            <p>Taking the midterm exam was a challenging but rewarding experience. It forced me to think critically about how objects interact and how to properly encapsulate data. I realized that planning the logic using diagrams before writing the actual Java code saves a lot of debugging time. Moving forward, I want to focus more on advanced OOP principles like inheritance and interfaces to build more scalable programs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="final" class="section">
+            <h2 class="section-title">Final Page</h2>
+            <div class="glass-panel text-center">
+                <div class="project-tag">Coming Soon</div>
+                <h3>Final Term Content</h3>
+                <p class="mt-4">This section will contain final term activities, projects, and reflections as the semester progresses.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="glass-panel text-center">
+                <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                <a href="mailto:contact@example.com" class="btn primary mt-4">Send an Email</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Geena Nuesca. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
