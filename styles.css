@@ -8,18 +8,7 @@
     --glass-border: rgba(139, 92, 246, 0.2);
 }
 
-.background-mesh {
-    position: fixed;
-    top: -10%;
-    left: 0;
-    width: 100%;
-    height: 120%;
-    z-index: -1;
-    background-image: url("data:image/svg+xml,%3Csvg width='250' height='250' viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%230f172a' opacity='0.1'%3E%3Cpath d='M40 40 a 15 15 0 1 0 30 0 l -3 -10 l -12 10 l -12 -10 z'/%3E%3Ccircle cx='170' cy='60' r='8'/%3E%3Ccircle cx='162' cy='48' r='4'/%3E%3Ccircle cx='170' cy='44' r='4'/%3E%3Ccircle cx='178' cy='48' r='4'/%3E%3Cpath d='M50 170 l 15 8 l -15 8 z m 15 8 l 25 0 m -20 -8 l 0 16 m 8 -16 l 0 16'/%3E%3Cpath d='M160 160 l 30 0 m -30 -4 a 4 4 0 1 0 0 8 m 30 -8 a 4 4 0 1 1 0 8'/%3E%3C/g%3E%3C/svg%3E");
-    background-size: 250px;
-    pointer-events: none;
-    will-change: transform;
-}
+
 
 * {
     margin: 0;
@@ -46,17 +35,6 @@ h3,
     font-family: 'Outfit', sans-serif;
 }
 
-.background-mesh {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background:
-        radial-gradient(circle at 15% 50%, rgba(139, 92, 246, 0.15), transparent 25%),
-        radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.15), transparent 25%);
-    z-index: -1;
-}
 
 /* Navigation */
 nav {
@@ -241,9 +219,11 @@ main {
     0% {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
+
     50% {
         border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
     }
+
     100% {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
@@ -457,9 +437,17 @@ footer {
 }
 
 /* Midterm Section Styles */
-.mb-6 { margin-bottom: 2.5rem; }
-.mt-4 { margin-top: 1.5rem; }
-.mb-2 { margin-bottom: 0.5rem; }
+.mb-6 {
+    margin-bottom: 2.5rem;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
 
 /* Table Styles */
 .table-responsive {
@@ -473,7 +461,8 @@ footer {
     font-size: 0.95rem;
 }
 
-.activity-table th, .activity-table td {
+.activity-table th,
+.activity-table td {
     padding: 1rem;
     text-align: left;
     border-bottom: 1px solid var(--glass-border);
