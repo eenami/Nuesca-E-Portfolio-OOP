@@ -532,6 +532,7 @@ footer {
     padding: 1.5rem;
     margin-bottom: 2rem;
     border: 1px solid var(--glass-border);
+    scroll-margin-top: 100px;
 }
 
 .activity-card h4 {

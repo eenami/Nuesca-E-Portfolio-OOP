@@ -61,14 +61,21 @@ if (container && card) {
 
 // Accordion behavior for details elements
 // When one dropdown is opened, all other open dropdowns will close
+// and the page will scroll to the top of the opened activity
 document.querySelectorAll('details').forEach((details) => {
     details.addEventListener('toggle', (e) => {
         if (details.open) {
+            // Close other open details
             document.querySelectorAll('details').forEach((otherDetails) => {
                 if (otherDetails !== details && otherDetails.open) {
                     otherDetails.open = false;
                 }
             });
+            
+            // Scroll to the opened activity with a slight delay to account for content shift
+            setTimeout(() => {
+                details.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 50);
         }
     });
 });
