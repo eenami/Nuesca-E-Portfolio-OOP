@@ -79,3 +79,13 @@ document.querySelectorAll('details').forEach((details) => {
         }
     });
 });
+
+// Parallax effect for the background cat pattern
+window.addEventListener('scroll', () => {
+    const bgMesh = document.querySelector('.background-mesh');
+    if (bgMesh) {
+        const scrolled = window.pageYOffset;
+        // Use a subtle movement factor (0.15) for the background parallax
+        bgMesh.style.transform = `translateY(${scrolled * 0.15}px)`;
+    }
+});
