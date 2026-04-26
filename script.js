@@ -58,3 +58,17 @@ if (container && card) {
         card.style.transition = 'none';
     });
 }
+
+// Accordion behavior for details elements
+// When one dropdown is opened, all other open dropdowns will close
+document.querySelectorAll('details').forEach((details) => {
+    details.addEventListener('toggle', (e) => {
+        if (details.open) {
+            document.querySelectorAll('details').forEach((otherDetails) => {
+                if (otherDetails !== details && otherDetails.open) {
+                    otherDetails.open = false;
+                }
+            });
+        }
+    });
+});
