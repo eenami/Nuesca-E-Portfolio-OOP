@@ -22,7 +22,8 @@ This project is an E-Portfolio created as part of the Midterm requirement for Ob
 - Midterm Quizzes
 - Midterm Seatworks
 - Midterm Assignments
-- Midterm Seatworks
+- Midterm Activities
+- Midterm Exam
 
 ## 💡 Key Learnings
 This project helped improve understanding of how Java works as a structured and object-oriented language. It strengthened skills in logical thinking, debugging, and building real-world programs using proper programming concepts.
